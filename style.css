@@ -295,7 +295,7 @@ align-self:center;
   grid-template-columns:1fr 1fr 1fr;
   padding-top:10px;
   margin:50px;
-  margin-top:70px;
+  margin-top:100px;
   }
   #triangle
   {
@@ -343,7 +343,7 @@ align-self:center;
   }
   #projects
   {
-  height:220vh;
+  height:200vh;
   }
   .project-tile
   {
