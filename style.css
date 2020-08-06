@@ -11,6 +11,390 @@
 #navbar
 {
 top: 0;
+font-size:1.6em;
+font-family: 'BEBAS NEUE';
+display:flex;
+justify-content:flex-end;
+align-items:center;
+position: fixed;
+width:100%;
+background:white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+z-index:2;
+}
+ul
+{
+list-style-type: none;
+margin: 0;
+padding-right: 10px;
+}
+li
+{
+display:inline;
+padding:5px;
+}
+a
+{
+text-decoration:none;
+color:black;
+}
+#main
+{
+display:flex;
+flex-direction:column;
+font-family: 'Bebas Neue';
+width: 100%;
+color:white;
+overflow-x:hidden;
+}
+#welcome-section
+{
+height:100vh;
+background:#1a65c7;
+}
+#triangle
+{
+width:80vw;
+height:auto;
+position:absolute;
+top:-2%;
+right:3%;
+z-index: -1;
+}
+#oval
+{
+width:30vw;
+height:auto;
+position:absolute;
+top:60%;
+left:3%;
+z-index: -1;
+}
+#graphic1
+{
+position:absolute;
+top:105%;
+right:5%;
+z-index: -1;
+opacity: .4;
+}
+.welcomegrid
+{
+display:grid;
+height:100vh;
+grid-template-areas:
+". photo ."
+". name ."
+"desc desc desc";
+grid-gap:10px;
+grid-template-rows:auto auto 1fr;
+grid-template-columns:1fr 1fr 1fr;
+text-align: center;
+margin-top:15vh;
+}
+#photo
+{
+grid-area:photo;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+#potrait
+{
+width: 70%;
+min-width:200px;
+box-shadow:10px 10px #1ac77c;
+}
+.name
+{
+font-size:1.3em;
+color:white;
+grid-area:name;
+padding-top:5px;
+}
+.name h1
+{
+color:white;
+grid-area:name;
+font-family:Poppins;
+}
+.name p
+{
+font-size:1.2em;
+color:#1ac77c;
+margin-right:3%;
+}
+#desc
+{
+  grid-area:desc;
+background:url("https://thumbs.dreamstime.com/b/blue-color-background-grid-lines-graph-paper-vector-graphic-artwork-design-element-graph-paper-background-blue-color-127319706.jpg");
+color:black;
+box-shadow:10px 10px #1ac77c;
+font-family:"Kalam";
+margin:30px;
+margin-top:15px;
+padding:15px;
+font-size:5.2vmin;
+height:80px;
+}
+#projects
+{
+background:#181c24;
+height:190vh;
+text-align:center;
+font-size:35px;
+padding-top:20px;
+padding-bottom:20px;
+color:white;
+border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+}
+.project-tile
+{
+display:grid;
+grid-template-areas:
+"one"
+"two"
+"three"
+"four";
+grid-template-rows:295px;
+grid-template-columns:350px;
+grid-gap:50px;
+justify-content: center;
+color:white;
+padding-top:20px;
+}
+.pgrid1
+{
+background:rgba(191, 31, 31, 1);
+grid-area:one;
+display:flex;
+flex-direction:column;
+border-radius:30px;
+}
+.pgrid1 p,.pgrid2 p,.pgrid3 p,.pgrid4 p
+{
+justify-self:center;
+align-self:center;
+}
+.project-tile a
+{
+color:white;
+}
+.project-tile img
+{
+width: 350px;
+height: auto;
+justify-self:center;
+align-self:center;
+}
+.pgrid2
+{
+background:#124a97;
+grid-area:two;
+display:flex;
+flex-direction:column;
+border-radius:30px;
+}
+.pgrid3
+{
+  display:none;
+}
+.pgrid3m
+{
+display:flex;
+flex-direction:column;
+border-radius:30px;
+grid-area:three;
+}
+.pgrid3 p,.pgrid3m p
+{
+background:black;
+width:350px;
+border-radius:0px 0px 30px 30px;
+}
+#contacts
+{
+background:#ddd;
+height:80vh;
+}
+.contactwrap
+{
+text-align:center;
+font-size:35px;
+padding-top:20vh;
+color:black;
+}
+.contactwrap img
+{
+width:70px;
+height:70px;
+padding:15px;
+margin-top:20px;
+}
+.contactwrap img:hover,.contactwrap img
+{
+animation: none;
+}
+.footer
+{
+border-top:5px solid #1ac77c;
+color:black;
+font-family:"Roboto Mono";
+height:15vh;
+background:#ddd;
+text-align:center;
+display:grid;
+}
+.footer h2
+{
+font-size:25px;
+}
+.footer p
+{
+font-size:20px;
+}
+
+.footer div
+{
+justify-self:center;
+align-self:center;
+}
+@keyframes hover
+{
+  from{
+  transition:0;
+  }
+  to{
+  width:200px;
+  height:200px;
+  transition: width 2s linear 1s;
+  }
+}
+@keyframes out
+{
+  from{
+  width:200px;
+  height:200px;
+  }
+  to{
+  transition: width 2s linear 1s;
+  }
+}
+/* iPhone 6/7/8, Pixel 2 (phones 375px and up)*/
+@media only screen and (min-width: 375px)
+{
+  .welcomegrid
+  {
+  margin-top:22.5vh;
+  }
+  #projects
+  {
+  height:150vh;
+  }
+  .contactwrap
+  {
+  font-size:40px;
+  padding-top:22.5vh;
+  }
+}
+/* iPad / Tablet (tablets 768px and up)*/
+@media only screen and (min-width: 768px)
+{
+  #navbar
+  {
+  font-size:3em;
+  }
+  .welcomegrid
+  {
+  margin-top:22.5vh;
+  }
+  #potrait
+  {
+  min-width:300px;
+  }
+  #desc
+  {
+  font-family:"Kalam";
+  margin:30px;
+  margin-top:15px;
+  padding:15px;
+  font-size:5.2vmin;
+  height:120px;
+  }
+  .name
+  {
+  font-size:2em;
+  padding-top:5px;
+  }
+  .name p
+  {
+  font-size:1.2em;
+  margin-right:3%;
+  }
+  #projects
+  {
+  height:135vh;
+  }
+  .project-tile
+  {
+  grid-template-rows:400px;
+  grid-template-columns:500px;
+  grid-gap:50px;
+  }
+  .pgrid3m p
+  {
+  width:500px;
+  border-radius:0px 0px 30px 30px;
+  }
+  .pgrid1 img,.pgrid2 img
+  {
+  width:500px;
+  height:350px;
+  justify-self:center;
+  align-self:center;
+  }
+  .pgrid3 img,.pgrid3m img
+  {
+  width:500px;
+  height:241.4px;
+  }
+  .contactwrap
+  {
+  font-size:60px;
+  padding-top:25vh;
+  }
+  .contactwrap img
+  {
+  width:100px;
+  height:100px;
+  padding:15px;
+  margin-top:20px;
+  }
+  #contacts
+  {
+  height:90vh;
+  }
+  .footer
+  {
+  height:10vh;
+  background:#ddd;
+  text-align:center;
+  display:grid;
+  }
+  .footer h2
+  {
+  font-size:40px;
+  }
+  .footer p
+  {
+  font-size:30px;
+  }
+}
+@media only screen and (min-width: 1024px)
+{
+  #navbar
+{
+top: 0;
 font-size:6vmin;
 font-family: 'BEBAS NEUE';
 display:flex;
@@ -258,143 +642,4 @@ font-size:25px;
 justify-self:center;
 align-self:center;
 }
-@keyframes hover
-{
-  from{
-  transition:0;
-  }
-  to{
-  width:200px;
-  height:200px;
-  transition: width 2s linear 1s;
-  }
-}
-@keyframes out
-{
-  from{
-  width:200px;
-  height:200px;
-  }
-  to{
-  transition: width 2s linear 1s;
-  }
-}
-/* Extra small devices (phones, 768px and down) */
-@media only screen and (max-width: 768px)
-{
-  .welcomegrid
-  {
-  display:grid;
-  height:100vh;
-  grid-template-areas:
-  ". photo ."
-  ". name ."
-  "desc desc desc";
-  grid-gap:10px;
-  grid-template-rows:auto auto 1fr;
-  grid-template-columns:1fr 1fr 1fr;
-  padding-top:10px;
-  margin:50px;
-  margin-top:100px;
-  }
-  #triangle
-  {
-  width:80vw;
-  height:auto;
-  position:absolute;
-  top:-2%;
-  right:3%;
-  z-index: -1;
-  }
-  #oval
-  {
-  width:30vw;
-  height:auto;
-  position:absolute;
-  top:60%;
-  left:3%;
-  z-index: -1;
-  }
-  .name
-  {
-  font-size:35px;
-  color:white;
-  grid-area:name;
-  padding-top:5px;
-  }
-  .name p
-  {
-  font-size:20px;
-  color:#1ac77c;
-  margin-right:3%;
-  line-height:5px;
-  }
-  #desc
-  {
-    grid-area:desc;
-  background:url("https://thumbs.dreamstime.com/b/blue-color-background-grid-lines-graph-paper-vector-graphic-artwork-design-element-graph-paper-background-blue-color-127319706.jpg");
-  color:black;
-  box-shadow:10px 10px #1ac77c;
-  font-family:"Kalam";
-  margin:20px;
-  padding:20px;
-  font-size:1.3rem;
-  height:60px;
-  }
-  #projects
-  {
-  height:200vh;
-  }
-  .project-tile
-  {
-  display:grid;
-  grid-template-areas:
-  "one"
-  "two"
-  "three"
-  "four";
-  grid-template-rows:370px;
-  grid-template-columns:450px;
-  grid-gap:50px;
-  justify-content: center;
-  }
-  .project-tile img
-  {
-  width: 450px;
-  height: auto;
-  }
-  .pgrid3
-  {
-    display:none;
-  }
-  .pgrid3m
-  {
-  display:flex;
-  flex-direction:column;
-  border-radius:30px;
-  grid-area:three;
-  }
-  .pgrid3m p
-  {
-  width:450px;
-  }
-  .contactwrap img
-  {
-  width:100px;
-  height:100px;
-  padding:20px;
-  margin-top:30px;
-  }
-  .footer h2
-  {
-  font-size:25px;
-  }
-  .footer p
-  {
-  font-size:20px;
-  }
-  .contactwrap img:hover,.contactwrap img
-  {
-  animation: none;
-  }
 } 
