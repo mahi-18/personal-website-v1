@@ -265,19 +265,19 @@ align-self:center;
   transition:0;
   }
   to{
-  width:200px;
-  height:200px;
-  transition: width 2s linear 1s;
+  width:16vw;
+  height:16vw;
+  transition: width 1s linear 1s;
   }
 }
 @keyframes out
 {
   from{
-  width:200px;
-  height:200px;
+  width:16vw;
+  height:16vw;
   }
   to{
-  transition: width 2s linear 1s;
+  transition: width 1s linear 1s;
   }
 }
 /* iPhone 6/7/8, Pixel 2 (phones 375px and up)*/
@@ -410,12 +410,12 @@ ul
 {
 list-style-type: none;
 margin: 0;
-padding-right: 10px;
+padding-right: 0.5vw;
 }
 li
 {
 display:inline;
-padding:5px;
+padding:0.5vw;
 }
 a
 {
@@ -461,6 +461,7 @@ top:105%;
 right:5%;
 z-index: -1;
 opacity: .4;
+width:15vw;
 }
 .welcomegrid
 {
@@ -521,9 +522,9 @@ height:18vh;
 #projects
 {
 background:#181c24;
-height:150vh;
+height:160vh;
 text-align:center;
-font-size:35px;
+font-size:3vw;
 padding-top:20px;
 padding-bottom:20px;
 color:white;
@@ -535,12 +536,12 @@ display:grid;
 grid-template-areas:
 "one two ."
 "three three three";
-grid-template-rows:400px 400px;
-grid-template-columns:500px 500px;
-grid-gap:50px;
+grid-template-rows:30vw 30vw;
+grid-template-columns:42vw 42vw;
+grid-gap:1vw;
 justify-content: center;
 color:white;
-padding-top:20px;
+padding-top:3vh;
 }
 .pgrid1
 {
@@ -548,7 +549,7 @@ background:rgba(191, 31, 31, 1);
 grid-area:one;
 display:flex;
 flex-direction:column;
-border-radius:30px;
+border-radius:2vw;
 }
 .pgrid1 p,.pgrid2 p,.pgrid3 p,.pgrid4 p
 {
@@ -561,10 +562,8 @@ color:white;
 }
 .project-tile img
 {
-width:500px;
-height:350px;
-justify-self:center;
-align-self:center;
+width:42vw;
+height:36vw;
 }
 .pgrid2
 {
@@ -572,7 +571,7 @@ background:#124a97;
 grid-area:two;
 display:flex;
 flex-direction:column;
-border-radius:30px;
+border-radius:2vw;
 }
 .pgrid3m
 {
@@ -582,19 +581,20 @@ border-radius:30px;
 {
 display:flex;
 flex-direction:column;
-border-radius:30px;
+border-radius:2vw;
 grid-area:three;
+margin-top:2.5vw;
 }
 .pgrid3 img,.pgrid3m img
 {
-width:700px;
-height:338px;
+width:50vw;
+height:30vw;
 }
 .pgrid3 p,.pgrid3m p
 {
 background:black;
-width:700px;
-border-radius:0px 0px 30px 30px;
+width:50vw;
+border-radius:0px 0px 2vw 2vw;
 }
 #contacts
 {
@@ -604,25 +604,25 @@ height:80vh;
 .contactwrap
 {
 text-align:center;
-font-size:35px;
-padding-top:60px;
+font-size:3vw;
+padding-top:3.5vw;
 color:black;
 }
 .contactwrap img
 {
-width:180px;
-height:180px;
-padding:40px;
-margin-top:30px;
-animation:out 2s;
+width:14vw;
+height:14vw;
+padding:1.5vw;
+margin-top:2vw;
+animation:out 0.3s;
 }
 .contactwrap img:hover
 {
-animation: hover 1s ease forwards;
+animation: hover 0.4s ease forwards;
 }
 .footer
 {
-border-top:5px solid #1ac77c;
+border-top:0.3vw solid #1ac77c;
 color:black;
 font-family:"Roboto Mono";
 height:15vh;
@@ -633,12 +633,12 @@ display:grid;
 .footer h2
 {
 
-font-size:40px;
+font-size:3vw;
 }
 .footer p
 {
 
-font-size:25px;
+font-size:2vw;
 }
 .footer div
 {
