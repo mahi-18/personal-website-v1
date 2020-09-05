@@ -40,7 +40,7 @@
 #navbar
 {
 top: 0;
-font-size:1.6em;
+font-size:5vh;
 font-family: 'BEBAS NEUE';
 display:flex;
 background:white;
@@ -62,12 +62,12 @@ ul
 {
 list-style-type: none;
 margin: 0;
-padding-right: 10px;
+padding-right: 6px;
 }
 li
 {
 display:inline;
-padding:5px;
+padding:4px;
 }
 a
 {
@@ -137,7 +137,7 @@ justify-content:center;
 }
 #potrait
 {
-width: 70%;
+width: 35vh;
 min-width:200px;
 box-shadow:10px 10px #1ac77c;
 }
@@ -319,9 +319,24 @@ align-self:center;
 /* iPhone 6/7/8, Pixel 2 (phones 375px and up)*/
 @media only screen and (min-width: 375px)
 {
+  #navbar
+  {
+  font-size:4.5vh;
+  }
+  ul
+  {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 10px;
+  }
+  li
+  {
+  display:inline;
+  padding:3px;
+  }
   .welcomegrid
   {
-  margin-top:22.5vh;
+  margin-top:18vh;
   }
   #projects
   {
@@ -332,10 +347,22 @@ align-self:center;
   font-size:40px;
   padding-top:22.5vh;
   }
+  .name h1
+  {
+  font-size:2em;
+  font-family:Poppins;
+  }
+  .name p
+  {
+  font-size:1.5em;
+  color:#1ac77c;
+  margin-right:3%;
+  }
 }
 /* iPad / Tablet (tablets 768px and up)*/
 @media only screen and (min-width: 768px)
 {
+  
   #navbar
   {
   font-size:3em;
