@@ -162,8 +162,8 @@ margin-right:3%;
 }
 #desc
 {
-  grid-area:desc;
-background:url("https://thumbs.dreamstime.com/b/blue-color-background-grid-lines-graph-paper-vector-graphic-artwork-design-element-graph-paper-background-blue-color-127319706.jpg");
+grid-area:desc;
+background:url("https://i.imgur.com/mxNFz9q.png");
 color:black;
 box-shadow:10px 10px #1ac77c;
 font-family:"Kalam";
@@ -568,7 +568,7 @@ line-height:5px;
 #desc
 {
 grid-area:desc;
-background:url("https://thumbs.dreamstime.com/b/blue-color-background-grid-lines-graph-paper-vector-graphic-artwork-design-element-graph-paper-background-blue-color-127319706.jpg");
+background:url("https://i.imgur.com/mxNFz9q.png");
 background-repeat: no-repeat;
 background-position: center;    /* <-- these 3 lines keep background from zoom out */
 background-size: cover;
